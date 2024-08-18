@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    height: 100%;
+    background-color: white;
+}
+
+nav > div {
+    width: auto;
+}
+
+.box-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 25px;
+}
+
+.box-logo > * {
+    padding: 0 2px;
+}
+
+.box-logo > span {
+    font-size: 1.5em;
+    color: #3addb7;
+}
+
+.box-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-menu > a {
+    padding: 25px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.box-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-login > * {
+    padding-left: 25px;
+}
+
+.box-login span {
+    color: lightgray;
+    padding-top: 4px;
+}
+
+.i-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.i-cart > span:last-child {
+    background-color: red;
+    font-size: 12.5px;
+    padding: 1px 5px;
+    border-radius: 50%;
+    color: black;
+    position: absolute;
+    right: -2px;
+    top: -5px;
+}
+
+.box-login > a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: lightgray;
+}
+
+section {
+    width: 1200px;
+    min-height: 100%;
+    background-color: white;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+
+section > * {
+    margin-bottom: 20px;
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+article > div {
+    width: calc(50% - 10px);
+    height: auto;
+    background-color: aqua;
+}
+
+.cart {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
