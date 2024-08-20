@@ -103,13 +103,13 @@ nav > div {
 main {
     width: 100%;
     height: calc(100vh - 70px);
-    background-color: lightgray;
+    background-color: rgb(250, 248, 248);
 }
 
 section {
     width: 1200px;
     min-height: 100%;
-    background-color: white;
+    background-color: transparent;
     margin: auto;
     padding: 50px 0 0 0;
 }
@@ -121,13 +121,11 @@ section > * {
 article {
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-start; */
 }
 
 article > div {
     width: calc(50% - 10px);
     height: auto;
-    background-color: aqua;
 }
 
 .cart {
@@ -135,5 +133,175 @@ article > div {
     height: 200px;
     background-color: white;
     margin-bottom: 25px;
+    padding: 25px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.cart > * {
+    margin-right: 35px;
+}
+
+.cart > button {
+    width: 33px;
+    height: 33px;
+    padding: 2.5px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid #3addb7;
+}
+
+.cart > button:hover {
+    background-color: #3addb7;
+    border-color: white;
+    cursor: pointer;
+}
+
+.cart > button:hover > span {
+    color: white;
+}
+
+.cart > button > span {
+    color: #3addb7;
+}
+
+.cart > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+}
+
+
+.cart-detail {
+    width: 100%;
+    height: 100%;
+    display:  flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cart-detail > p:first-child {
+    font-size: 1.5em;
+}
+
+.cart-detail > p:last-child {
+    font-size: 1.2em;
+}
+
+.box-level {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.box-level > select {
+    width: auto;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+}
+
+.level {
+    width: 15px;
+    height: 15px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.active {
+    background-color: #3addb7;
+}
+
+.info {
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    color: gray;
+}
+
+.box-coupon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-coupon > span {
+    color: #3addb7;
+}
+
+.box-coupon > input {
+    width: 60%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 0 10px;
+}
+
+.box-coupon > button {
+    width: 30%;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid #3addb7;
+    border-radius: 15px;
+    background-color: white;
+    color: #3addb7;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.box-coupon > button:hover {
+    background-color: #3addb7;
+    color: white;
+    cursor: pointer;
+}
+
+.info-detail-total {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-detail-total > p:first-child {
+    font-size: 1.2em;
+}
+
+.info-detail-total > p:last-child {
+    font-size: 2em;
+    font-weight: 700;
+    color: #3addb7;
+}
+
+.info > button {
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    background-color: #3addb7;
+    color: darkblue;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.info > button:hover {
+    background-color: #3addb7;
+    color: white;
+    cursor: pointer;
 }

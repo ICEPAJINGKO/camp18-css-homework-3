@@ -56,23 +56,73 @@
             <article>
                 <div class="box-cart">
                     <div class="cart">
-                        <i></i>
-                        <img src="" alt="">
+                        <button>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </button>
+                        <img src="https://picsum.photos/150" alt="">
                         <div class="cart-detail">
                             <p>Google Docs</p>
-                            <label for="level">* * * *</label>
-                            <select name="level" id="level" form="levelform">
-                                <option value="1">LV 1-3</option>
-                                <option value="2">LV 2-3</option>
-                                <option value="3">LV 3-3</option>
-                            </select>
+                            <div class="box-level">
+                                <div class="level active"></div>
+                                <div class="level"></div>
+                                <div class="level"></div>
+                                <select name="level" id="level" form="levelform">
+                                    <option value="1">LV 1-3</option>
+                                    <option value="2" selected>LV 2-3</option>
+                                    <option value="3">LV 3-3</option>
+                                </select>
+                            </div>
                             <p>THB 150</p>
                         </div>
                     </div>
-                    <div class="cart"></div>
+                    <div class="cart">
+                        <button>
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </button>
+                        <img src="https://picsum.photos/150" alt="">
+                        <div class="cart-detail">
+                            <p>Google Docs</p>
+                            <div class="box-level">
+                                <div class="level active"></div>
+                                <div class="level active"></div>
+                                <div class="level active"></div>
+                                <div class="level"></div>
+                                <select name="level" id="level" form="levelform">
+                                    <option value="1">LV 1/4</option>
+                                    <option value="2">LV 2/4</option>
+                                    <option value="3">LV 3/4</option>
+                                    <option value="4">LV 4/4</option>
+                                </select>
+                            </div>
+                            <p>THB 150</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="box-info">
-                    <div class="info"></div>
+                    <div class="info">
+                        <h2>Order Info</h2>
+                        <div class="info-detail">
+                            <p>Subtotal</p>
+                            <p>THB 300</p>
+                        </div>
+                        <div class="box-coupon">
+                            <span class="material-symbols-outlined">
+                                confirmation_number
+                            </span>
+                            <input type="text" placeholder="Promotion code">
+                            <button>Apply</button>
+                        </div>
+                        <hr>
+                        <div class="info-detail-total">
+                            <p>Total payment</p>
+                            <p>THB 300</p>
+                        </div>
+                        <button>LOG IN TO CHECKOUT</button>
+                    </div>
                 </div>
             </article>
         </section>
